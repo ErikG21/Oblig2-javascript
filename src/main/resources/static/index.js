@@ -54,9 +54,11 @@ let utMeldingNummer = "";
 
     //variabler i bilett objekt blir opprettet med en verdi
     const bilett = {
+        //kode for select isteden for radioknapper
+        // film: document.getElementById("velgFilm").value,
         //variabler uten input validering
-        film: document.getElementById("velgFilm").value,
-        antall: document.getElementById("antallPersoner").value,
+        film: $('input[name=velg-film]:checked').val(),
+        antall: $("#antallPersoner").val(),
         //variabler med input validering
         fornavn: utMeldingFornavn,
         etternavn: utMeldingEtternavn,
@@ -82,8 +84,9 @@ let utMeldingNummer = "";
     for (let i = 0; i < inputBokser.length; i++) {
         inputBokser[i].value = '';
     }
-    //select-en min for film blir resatt til default value/ første value, altså "velg Film"
-    document.getElementById("velgFilm").value = '';
+    //kode for select isteden for radioknapper
+    // //select-en min for film blir resatt til default value/ første value, altså "velg Film"
+    // document.getElementById("velgFilm").value = '';
 }
 
     function hentAlle(){

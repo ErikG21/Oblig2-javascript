@@ -19,19 +19,29 @@
         <div class="col-md-6">
             <h1>Bestilling av kinobiletter</h1>
             <form class="form">
-                <div class="form-group row">
-                    <label for="velgFilm" class="col-md-4 col-form-label">Velg film</label>
-                    <div class="col-md-8">
-                        <form>
-                            <select id="velgFilm" class="form-control">
-                            <option value="" disabled selected>Velg film</option>
-                            <option>Harry Potter</option>
-                            <option>Lord of the Rings</option>
-                            <option>Star Wars</option>
-                            </select>
-                        </form>
-                    </div>
+                <div class="form-group">
+                    <label for="harry-potter">Harry potter</label>
+                    <input type="radio" id="harry-potter" value="harry potter" name="velg-film">
                 </div>
+                    <div class="form-group">
+                        <label for="lord-of-the-rings">Lord of the rings</label>
+                        <input type="radio" id="lord-of-the-rings" value="lord of the rings" name="velg-film">
+                    </div>
+                        <div class="form-group">
+                            <label for="starwars">Starwars</label>
+                        <input type="radio" id="starwars" value="starwars" name="velg-film">
+                        </div>
+<!--                    <label for="velgFilm" class="col-md-4 col-form-label">Velg film</label>-->
+<!--                    <div class="col-md-8">-->
+<!--                        <form>-->
+<!--                            <select id="velgFilm" class="form-control">-->
+<!--                            <option value="" disabled selected>Velg film</option>-->
+<!--                            <option>Harry Potter</option>-->
+<!--                            <option>Lord of the Rings</option>-->
+<!--                            <option>Star Wars</option>-->
+<!--                            </select>-->
+<!--                        </form>-->
+<!--                    </div>-->
 
                 <div class="form-group row">
                     <label for="antallPersoner" class="col-md-4 col-form-label">Antall</label>
